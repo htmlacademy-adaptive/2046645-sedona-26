@@ -4,34 +4,32 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
+  <div class="page__container">
   <header class="main-header">
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Закрыть меню.</span>
-      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--main">
             <a class="site-list__link" href="#">
-              Главная.
+              Главная
             </a>
           </li>
           <li class="site-list__item site-list__item--multimedia">
             <a class="site-list__link" href="catalog.html">
-              Фото и видео.
-            </a>
+              Фото и видео
           </li>
           <li class="site-list__item site-list__item--form">
             <a class="site-list__link" href="form.html">
-              Форма отзыва.
+              Форма отзыва
             </a>
           </li>
           <li class="site-list__item site-list__item--academy">
             <a class="site-list__link" href="#">
-              HTML Academy.
+              HTML Academy
             </a>
           </li>
         </ul>
@@ -39,20 +37,20 @@
     </nav>
     <div class="main-header__wrapper">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="./img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
+        <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
       </a>
       <button class="main-header__menu-open" type="button">
         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
         </svg>
-        <span class="visually-hidden">Открыть меню.</span>
+        <span class="visually-hidden">Переключатель показа меню.</span>
       </button>
     </div>
   </header>
   <main class="main-container">
     <div class="main-container__promo">
       <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
-      <img class="main-container__promo-logo" src="./img/index/welcome.svg" width="282" height="214"
+      <img class="main-container__promo-logo" src="img/index/welcome.svg" width="282" height="214"
         alt="Welcome to the gorgeous Sedone 'Because the Grand Canyon sucks!">
     </div>
     <section class="reasons">
@@ -60,10 +58,10 @@
         <header class="reasons__header">
           <h2 class="visually-hidden">Преимущества.</h2>
           <h3 class="reasons__slogan">
-            Седона-небольшой<br>городок в Аризоне,<br>заслуживающий большего!
+            Седона-небольшой городок в Аризоне, заслуживающий большего!
           </h3>
           <p class="reasons__intro">
-            Рассмотрим 5 причин, по которым<br>Седона круче, чем Гранд Каньон!
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </p>
         </header>
         <ul class="reasons__list">
@@ -74,21 +72,21 @@
               <p class="reasons__description reasons__description--colour">Седона не аттракцион для туристов, там течет
                 своя жизнь</p>
             </div>
-            <img class="reasons__pictures" src="./img/index/city.jpg" width="320" height="260"
+            <img class="reasons__pictures" src="img/index/city.jpg" width="320" height="260"
               alt="Фото городка Седоны">
 
-            <ul class="advantages">
-              <li class="advantages__item advantages__item--housing">
-                <h4 class="advantages__title">ЖИЛЬЕ</h4>
-                <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <ul class="reasons__advantages">
+              <li class="reasons__item reasons__item--housing">
+                <h4 class="reasons__title reasons__title--advantages">ЖИЛЬЕ</h4>
+                <p class="reasons__description reasons__description--advantages">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantages__item advantages__item--food">
-                <h4 class="advantages__title">ЕДА</h4>
-                <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <li class="reasons__item reasons__item--food">
+                <h4 class="reasons__title reasons__title--advantages">ЕДА</h4>
+                <p class="reasons__description reasons__description--advantages">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="advantages__item advantages__item--gift">
-                <h4 class="advantages__title">СУВЕНИРЫ</h4>
-                <p class="advantages__description">Не только китайского, но и местного производства!</p>
+              <li class="reasons__item reasons__item--gift">
+                <h4 class="reasons__title reasons__title--advantages">СУВЕНИРЫ</h4>
+                <p class="reasons__description reasons__description--advantages">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
@@ -99,7 +97,7 @@
               <p class="reasons__description reasons__description--colour">Да, по нему можно пройтись! Если вы
                 осмелитесь, конечно</p>
             </div>
-            <img class="reasons__picrures" src="./img/index/devils-bridge.jpg" width="320" height="260"
+            <img class="reasons__picrures" src="img/index/devils-bridge.jpg" width="320" height="260"
               alt="Фото моста дьявола">
           </li>
           <li class="reasons__item reasons__item--square">
@@ -123,16 +121,16 @@
     <section class="search">
       <div class="search__wrapper">
         <h2 class="visually-hidden">Помощь в поиске гостинницы.</h2>
-        <h3 class="search__heading">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+        <strong class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?</strong>
         <p class="search__hotels-description">Укажите предполагаемые даты <br>поездки, и мы покажем вам лучшие
           <br>предложения гостиниц в
           Седоне</p>
       </div>
-      <a class="search__search-link button" href="catalog.html">НАЙТИ ГОСТИНИЦУ</a>
+      <a class="search__link button" href="catalog.html">НАЙТИ ГОСТИНИЦУ</a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img class="map__image" src="./img/index/map.jpg" width="320" height="350" alt="Место расположения Седоны.">
+      <img class="map__image" src="img/index/map.jpg" width="320" height="350" alt="Место расположения Седоны.">
     </section>
   </main>
   <footer class="main-footer">
@@ -148,7 +146,6 @@
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M23.45.948c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V.948c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.45.288 4.198 0 3.527 0H.9C.15 0 0 .347 0 .73c0 .682.89 4.07 4.145 8.551C6.315 12.341 9.37 14 12.153 14c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.11 13.216 19.403 14 20.405 14h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"
                   fill="#fff" />
-              </svg>
               </svg>
               <span class="visually-hidden">ВКонтакте</span>
             </a>
@@ -186,7 +183,7 @@
       </div>
     </div>
   </footer>
-  </footer>
+  </div>
 </body>
 
 </html>
