@@ -116,14 +116,12 @@
             <li class="form__input form__input--impression">
               <label class="form__selector-label">
                 <input class="visually-hidden form__control-input" type="radio" name="impression" value="negative">
-                <span class="form__control-mark"></span>
                 <span class="form__control-label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="form__input form__input--impression">
               <label class="form__selector-label">
                 <input class="visually-hidden form__control-input" type="radio" name="impression" value="neutral">
-                <span class="form__control-mark"></span>
                 <span class="form__control-label">Затрудняюсь ответить</span>
               </label>
             </li>
@@ -161,8 +159,10 @@
             </li>
           </ul>
           <fieldset class="form__fieldset form__fieldset--emotions">
-            <legend class="form__legend-title form__legend-title--emotions">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
-            <textarea class="form__textarea" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+            <label>
+              <span class="form__legend-title">ОПИШИТЕ СВОИ ЭМОЦИИ:</span>
+              <textarea class="form__textarea" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
           </fieldset>
           <div class="form__submit-wrapper">
             <button class="button form__button" type="submit">Отправить отзыв</button>
