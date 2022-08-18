@@ -19,6 +19,10 @@
   padding: 33px 20px 20px;
 }
 
+.page-main__wrapper-form {
+  padding: 36px 20px 28px;
+}
+
 .page-main__title {
   font-weight: 700;
   font-size: 18px;
@@ -30,6 +34,7 @@
 
 .page-main__title-form {
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 
 .page-main__description {
@@ -53,6 +58,51 @@
   font-family: "PT Sans", sans-serif;
 }
 
-.page-main__wrapper-form {
-  padding: 36px 20px 28px;
+@media (min-width: @tablet-width) {
+  .page-main__container {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .page-main__container-form {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .page-main__wrapper-catalog {
+    padding: 62px 95px 63px;
+  }
+
+  .page-main__wrapper-form {
+    padding: 64px 106px 102px 107px;
+  }
+
+  .page-main__title {
+    margin-bottom: 26px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .page-main__container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-main__container-form {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .page-main__wrapper-catalog {
+    padding: 100px 372px 65px 370px;
+  }
+
+  .page-main__wrapper-form {
+    padding: 115px 262px 67px 264px;
+  }
+
+  .page-main__title {
+    margin-bottom: 32px;
+  }
 }
