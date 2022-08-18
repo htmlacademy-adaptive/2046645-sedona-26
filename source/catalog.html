@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог Седоны</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,6 +12,9 @@
   <div class="page__container">
   <header class="main-header">
     <nav class="main-nav">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Седона">
+      </a>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--main">
@@ -37,9 +41,6 @@
       </div>
     </nav>
     <div class="main-header__wrapper">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Седона">
-      </a>
       <button class="main-header__menu-open" type="button">
         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
@@ -52,6 +53,7 @@
     <div class="page-main__promo">
       <img class="page-main__promo-logo" src="img/catalog/sedona.svg" width="229" height="39" alt="Промо текст Седоны">
     </div>
+    <div class="page-main__container">
     <section class="page-main__header">
       <div class="page-main__wrapper-catalog">
         <h1 class="page-main__title">ФОТО И ВИДЕО</h1>
@@ -70,6 +72,7 @@
                 alt="Неродные просторы">
             </a>
           </div>
+          <div class="photo__container">
           <div class="photo__information">
             <h3 class="photo__title">НЕРОДНЫЕ ПРОСТОРЫ</h3>
             <p class="photo__author">Автор фото: Борис</p>
@@ -83,6 +86,7 @@
               </svg></button>
             <span class="photo__count">1350</span>
           </div>
+          </div>
         </li>
         <li class="photo__item">
           <div class="photo__wrapper">
@@ -91,6 +95,7 @@
                 alt="Местная растительность">
             </a>
           </div>
+          <div class="photo__container">
           <div class="photo__information">
             <h3 class="photo__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h3>
             <p class="photo__author">Автор фото: Сергей</p>
@@ -105,6 +110,7 @@
             </button>
             <span class="photo__count">143</span>
           </div>
+          </div>
         </li>
         <li class="photo__item">
           <div class="photo__wrapper">
@@ -112,6 +118,7 @@
               <img class="photo__image" src="img/catalog/road.jpg" width="280" height="280" alt="Дорога на север">
             </a>
           </div>
+          <div class="photo__container">
           <div class="photo__information">
             <h3 class="photo__title">ДОРОГА НА СЕВЕР</h3>
             <p class="photo__author">Автор фото: Петр</p>
@@ -126,6 +133,7 @@
             </button>
             <span class="photo__count">96</span>
           </div>
+          </div>
         </li>
         <li class="photo__item">
           <div class="photo__wrapper">
@@ -133,6 +141,7 @@
               <img class="photo__image" src="img/catalog/bridge.jpg" width="280" height="280" alt="Мост дьявола">
             </a>
           </div>
+          <div class="photo__container">
           <div class="photo__information">
             <h3 class="photo__title">МОСТ ДЬЯВОЛА</h3>
             <p class="photo__author">Автор фото: Антон</p>
@@ -146,11 +155,12 @@
               </svg></button>
             <span class="photo__count">254</span>
           </div>
+          </div>
         </li>
       </ul>
     </section>
     <section class="page-main__video-gallery video">
-      <div class="video__wrapper">
+     <div class="video__wrapper">
         <h2 class="visually-hidden">Видео о Седоне.</h2>
       <strong class="video__title">ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</strong>
       <p class="video__description">Смотрите видео презентацию и скорее за билетами, пока они не подорожали в очередной
@@ -165,6 +175,7 @@
         </svg>
       </button>
     </section>
+    </div>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
