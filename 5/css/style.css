@@ -674,6 +674,7 @@
     margin: 0 auto;
   }
   .page-main__wrapper-catalog {
+    width: 458px;
     padding: 62px 95px 63px;
   }
   .page-main__wrapper-form {
@@ -685,8 +686,8 @@
 }
 @media (min-width: 1200px) {
   .page-main__container {
-    width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0;
   }
   .page-main__container-form {
     width: 960px;
@@ -814,6 +815,7 @@
 }
 @media (min-width: 768px) {
   .video__wrapper {
+    width: 445px;
     padding: 58px 102px 66px 101px;
   }
   .video__description {
