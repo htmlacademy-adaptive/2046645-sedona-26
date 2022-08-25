@@ -34,19 +34,22 @@
   text-align: center;
 }
 .page__container {
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   padding: 0;
   margin: 0 auto;
   background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .page__container {
-    width: 768px;
+    max-width: 768px;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
   .page__container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
   }
 }
 .main-header {
@@ -115,19 +118,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .site-list__item--multimedia {
-    margin-right: 155px;
+    width: 100%;
   }
   .site-list__item {
-    width: 153px;
-    padding: 18px 0 17px 0;
+    width: 20%;
+    padding: 0;
   }
   .site-list__link {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
@@ -140,7 +141,7 @@
     flex-direction: row;
   }
   .site-list__item {
-    width: 240px;
+    max-width: 240px;
     padding: 18px 0 17px 0;
   }
 }
@@ -322,7 +323,7 @@
     padding: 40px 32px 44px;
   }
   .reasons__item--bridge {
-    width: 768px;
+    width: 100%;
   }
   .reasons__landscapes {
     display: flex;
@@ -346,7 +347,7 @@
   }
   .reasons__advantages {
     display: grid;
-    grid-template-columns: 256px 256px 256px;
+    grid-template-columns: 33% 33% 33%;
     padding: 0;
   }
   .reasons__item--housing {
@@ -412,7 +413,7 @@
     padding: 47px 52px 56px 53px;
   }
   .reasons__item--bridge {
-    width: 1200px;
+    width: 100%;
   }
   .reasons__background {
     width: 295px;
@@ -429,9 +430,6 @@
   .reasons__item--tourist {
     width: 290px;
     padding: 43px 55px 62px;
-  }
-  .reasons__advantages {
-    grid-template-columns: 400px 400px 400px;
   }
   .reasons__item--housing {
     padding: 159px 60px 79px 58px;
