@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,6 +12,9 @@
   <div class="page__container">
   <header class="main-header">
     <nav class="main-nav">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
+      </a>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--main">
@@ -36,9 +40,6 @@
       </div>
     </nav>
     <div class="main-header__wrapper">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
-      </a>
       <button class="main-header__menu-open" type="button">
         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
@@ -58,7 +59,7 @@
         <header class="reasons__header">
           <h2 class="visually-hidden">Преимущества.</h2>
           <h3 class="reasons__slogan">
-            Седона-небольшой городок в Аризоне, заслуживающий большего!
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
           </h3>
           <p class="reasons__intro">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -66,15 +67,16 @@
         </header>
         <ul class="reasons__list">
           <li class="reasons__item reasons__item--city">
-            <div class="reasons__city">
-              <h3 class="reasons__title reasons__title--colour">НАСТОЯЩИЙ ГОРОДОК</h3>
-              <span class="reasons__number reasons__number--colour">— №1 —</span>
-              <p class="reasons__description reasons__description--colour">Седона не аттракцион для туристов, там течет
+            <div class="reasons__block">
+              <div class="reasons__city">
+                <h3 class="reasons__title reasons__title--colour">НАСТОЯЩИЙ ГОРОДОК</h3>
+                <span class="reasons__number reasons__number--colour">— №1 —</span>
+                <p class="reasons__description reasons__description--colour">Седона не аттракцион для туристов, там течет
                 своя жизнь</p>
-            </div>
+              </div>
             <img class="reasons__pictures" src="img/index/city.jpg" width="320" height="260"
               alt="Фото городка Седоны">
-
+            </div>
             <ul class="reasons__advantages">
               <li class="reasons__item reasons__item--housing">
                 <h4 class="reasons__title reasons__title--advantages">ЖИЛЬЕ</h4>
@@ -91,15 +93,18 @@
             </ul>
           </li>
           <li class="reasons__item reasons__item--bridge">
-            <div class="reasons__background">
-              <h3 class="reasons__title reasons__title--colour">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-              <span class="reasons__number reasons__number--colour">— №2 —</span>
-              <p class="reasons__description reasons__description--colour">Да, по нему можно пройтись! Если вы
+            <div class="reasons__landscapes">
+              <div class="reasons__background">
+                <h3 class="reasons__title reasons__title--colour">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+                <span class="reasons__number reasons__number--colour">— №2 —</span>
+                <p class="reasons__description reasons__description--colour">Да, по нему можно пройтись! Если вы
                 осмелитесь, конечно</p>
             </div>
             <img class="reasons__picrures" src="img/index/devils-bridge.jpg" width="320" height="260"
               alt="Фото моста дьявола">
+            </div>
           </li>
+          <div class="reasons__bonus">
           <li class="reasons__item reasons__item--square">
             <h3 class="reasons__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <span class="reasons__number">— №3 —</span>
@@ -115,6 +120,7 @@
             <span class="reasons__number">— №5 —</span>
             <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
+          </div>
         </ul>
       </div>
     </section>
@@ -130,7 +136,8 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img class="map__image" src="img/index/map.jpg" width="320" height="350" alt="Место расположения Седоны.">
+      <img class="map__image" src="img/index/map.jpg" width="320" height="350"
+        alt="Место расположения Седоны.">
     </section>
   </main>
   <footer class="main-footer">
