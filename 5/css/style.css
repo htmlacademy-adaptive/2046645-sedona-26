@@ -122,7 +122,10 @@
   }
   .site-list__item {
     width: 20%;
-    padding: 0;
+    padding: 18px 0 17px 0;
+  }
+  .site-list__item--form {
+    margin-left: auto;
   }
   .site-list__link {
     font-family: "PT Sans", sans-serif;
@@ -139,10 +142,6 @@
   .site-list {
     display: flex;
     flex-direction: row;
-  }
-  .site-list__item {
-    max-width: 240px;
-    padding: 18px 0 17px 0;
   }
 }
 .main-container__promo {
@@ -328,6 +327,10 @@
   .reasons__landscapes {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .reasons__bonus {
+    display: flex;
+    width: 100%;
   }
   .reasons__background {
     width: 184px;
@@ -672,8 +675,9 @@
     margin: 0 auto;
   }
   .page-main__wrapper-catalog {
-    width: 458px;
-    padding: 62px 95px 63px;
+    width: 71%;
+    margin: 0 auto;
+    padding: 66px 0 67px 0;
   }
   .page-main__wrapper-form {
     padding: 64px 106px 102px 107px;
@@ -684,15 +688,16 @@
 }
 @media (min-width: 1200px) {
   .page-main__container {
-    max-width: 1200px;
-    margin: 0;
+    width: 100%;
   }
   .page-main__container-form {
     width: 960px;
     margin: 0 auto;
   }
   .page-main__wrapper-catalog {
-    padding: 100px 372px 65px 370px;
+    width: 38%;
+    margin: 0 auto;
+    padding: 100px 0 65px 0;
   }
   .page-main__wrapper-form {
     padding: 115px 262px 67px 264px;
@@ -746,8 +751,9 @@
 }
 @media (min-width: 768px) {
   .photo {
+    width: 100%;
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: 50% 50%;
   }
   .photo__item:first-child {
     grid-column: 1/3;
@@ -786,13 +792,14 @@
 @media (min-width: 1200px) {
   .photo {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 33.3% 33.3% 33.3%;
   }
   .photo__item:first-child {
     grid-column: 1/4;
   }
 }
 .video__wrapper {
+  width: 100%;
   padding: 17px 26px 38px 28px;
 }
 .video__title {
@@ -813,8 +820,8 @@
 }
 @media (min-width: 768px) {
   .video__wrapper {
-    width: 445px;
-    padding: 58px 102px 66px 101px;
+    width: 68%;
+    /* padding: 58px 102px 66px 101px; */
   }
   .video__description {
     margin-top: 53px;
@@ -822,7 +829,8 @@
 }
 @media (min-width: 1200px) {
   .video__wrapper {
-    padding: 62px 378px 64px 377px;
+    width: 37%;
+    /* padding: 62px 378px 64px 377px; */
   }
 }
 .feedback {
