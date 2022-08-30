@@ -11,14 +11,19 @@
 <body class="page__body">
   <div class="page__container">
   <header class="main-header">
-    <nav class="main-nav">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
       </a>
+      <div class="main-nav__menu-wrapper">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--main">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link site-list__link--active" href="#">
               Главная
             </a>
           </li>
@@ -39,14 +44,6 @@
         </ul>
       </div>
     </nav>
-    <div class="main-header__wrapper">
-      <button class="main-header__menu-open" type="button">
-        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
-        </svg>
-        <span class="visually-hidden">Переключатель показа меню.</span>
-      </button>
-    </div>
   </header>
   <main class="main-container">
     <div class="main-container__promo">
@@ -136,8 +133,10 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img class="map__image" src="img/index/map.jpg" width="320" height="350"
-        alt="Место расположения Седоны.">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1660358.147420219!2d-112.21332431046054!3d35.63051198300064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC_0LDRgNC6INCT0YDQsNC90LQg0JrQsNC90YzQvtC9!5e0!3m2!1sru!2sru!4v1661784459424!5m2!1sru!2sru"
+      width="320"
+      height="350"
+      allowfullscreen title="Национальный парк Гранд Каньон"></iframe>
     </section>
   </main>
   <footer class="main-footer">
