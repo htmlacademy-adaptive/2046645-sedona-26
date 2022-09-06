@@ -182,6 +182,7 @@
 
   .reasons__block {
     display: flex;
+    min-height: 256px;
   }
 
   .reasons__title {
@@ -192,8 +193,12 @@
     margin: 0;
   }
 
+  .reasons__description--colour {
+    margin-top: 20px;
+  }
+
   .reasons__city {
-    width: 192px;
+    width: 33%;
     padding: 40px 32px 44px;
   }
 
@@ -204,6 +209,7 @@
   .reasons__landscapes {
     display: flex;
     flex-direction: row-reverse;
+    min-height: 256px;
   }
 
   .reasons__bonus {
@@ -212,22 +218,22 @@
   }
 
   .reasons__background {
-    width: 184px;
+    width: 33%;
     padding: 43px 36px 41px;
   }
 
   .reasons__item--square {
-    width: 189px;
+    width: 33%;
     padding: 41px 34px 63px 33px;
   }
 
   .reasons__item--road {
-    width: 162px;
+    width: 33%;
     padding: 42px 48px 41px 46px;
   }
 
   .reasons__item--tourist {
-    width: 175px;
+    width: 33%;
     padding: 42px 40px 42px 41px;
   }
 
@@ -238,7 +244,7 @@
   }
 
   .reasons__item--housing {
-    padding: 158px 35px 59px 36px;
+    padding: 138px 35px 59px 36px;
   }
 
   .reasons__item--housing::before {
@@ -253,7 +259,7 @@
   }
 
   .reasons__item--food {
-    padding: 159px 38px 59px 38px;
+    padding: 139px 38px 59px 38px;
   }
 
   .reasons__item--food::before {
@@ -268,7 +274,7 @@
   }
 
   .reasons__item--gift {
-    padding: 158px 31px 81px 32px;
+    padding: 138px 31px 81px 32px;
   }
 
   .reasons__item--gift::before {
@@ -294,6 +300,10 @@
     padding: 0;
     margin: 0;
   }
+
+  .reasons__pictures {
+    width: 100%;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -306,7 +316,7 @@
   }
 
   .reasons__city {
-    width: 259px;
+    width: 25%;
     padding: 47px 52px 56px 53px;
   }
 
@@ -315,22 +325,22 @@
   }
 
   .reasons__background {
-    width: 295px;
-    padding: 51px 78px 52px 79px;
+    width: 20%;
+    padding: 51px 78px 53px 79px;
   }
 
   .reasons__item--square {
-    width: 315px;
+    width: 33%;
     padding: 42px 43px 62px 42px;
   }
 
   .reasons__item--road {
-    width: 292px;
+    width: 33%;
     padding: 42px 54px 64px;
   }
 
   .reasons__item--tourist {
-    width: 290px;
+    width: 33%;
     padding: 43px 55px 62px;
   }
 
@@ -382,5 +392,9 @@
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 24px;
+  }
+
+  .reasons__pictures {
+    width: 100%;
   }
 }

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог Седоны</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/apple.png">
 </head>
 
 <body class="page__body">
@@ -65,8 +67,12 @@
         <li class="photo__item">
           <div class="photo__wrapper">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/catalog/open-spaces.jpg" width="280" height="280"
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/img-desktop/open-spaces-desktop.jpg 1x, img/img-desktop/open-spaces-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/img-tablet/open-spaces-tablet.jpg 1x, img/img-tablet/open-spaces-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/catalog/open-spaces.jpg" srcset="img/catalog/open-spaces@2x.jpg" width="280" height="280"
                 alt="Неродные просторы">
+              </picture>
             </a>
           </div>
           <div class="photo__container">
@@ -88,8 +94,12 @@
         <li class="photo__item">
           <div class="photo__wrapper">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/catalog/vegetation.jpg" width="280" height="280"
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/img-desktop/vegetation-desktop.jpg 1x, img/img-desktop/vegetation-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/img-tablet/vegetation-tablet.jpg 1x, img/img-tablet/vegetation-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/catalog/vegetation.jpg" srcset="img/catalog/vegetation@2x.jpg" width="280" height="280"
                 alt="Местная растительность">
+              </picture>
             </a>
           </div>
           <div class="photo__container">
@@ -112,7 +122,11 @@
         <li class="photo__item">
           <div class="photo__wrapper">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/catalog/road.jpg" width="280" height="280" alt="Дорога на север">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/img-desktop/road-desktop.jpg 1x, img/img-desktop/road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/img-tablet/road-tablet.jpg 1x, img/img-tablet/road-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/catalog/road.jpg" srcset="img/catalog/road@2x.jpg" width="280" height="280" alt="Дорога на север">
+              </picture>
             </a>
           </div>
           <div class="photo__container">
@@ -135,7 +149,11 @@
         <li class="photo__item">
           <div class="photo__wrapper">
             <a class="photo__link" href="#">
-              <img class="photo__image" src="img/catalog/bridge.jpg" width="280" height="280" alt="Мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/img-desktop/bridge-desktop.jpg 1x, img/img-desktop/bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/img-tablet/bridge-tablet.jpg 1x, img/img-tablet/bridge-tablet@2x.jpg 2x">
+              <img class="photo__image" src="img/catalog/bridge.jpg" srcset="img/catalog/bridge@2x.jpg" width="280" height="280" alt="Мост дьявола">
+              </picture>
             </a>
           </div>
           <div class="photo__container">
@@ -164,7 +182,11 @@
         раз!</p>
       </div>
       <a class="video__link" href="#">
-        <img class="video__image" src="img/catalog/video.jpg" width="280" height="177" alt="Видео о Седоне">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/img-desktop/video-desktop.jpg 1x, img/img-desktop/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/img-tablet/video-tablet.jpg 1x, img/img-tablet/video-tablet@2x.jpg 2x">
+        <img class="video__image" src="img/catalog/video.jpg" srcset="img/catalog/video@2x.jpg" width="280" height="177" alt="Видео о Седоне">
+        </picture>
       </a>
       <button class="button video__play" type="button">
         <svg width="48" height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -225,6 +247,7 @@
     </div>
   </footer>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

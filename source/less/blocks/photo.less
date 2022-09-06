@@ -6,6 +6,10 @@
   background-color: #964912;
 }
 
+.photo__image {
+  display: block;
+}
+
 .photo__information {
   text-align: left;
 }
@@ -98,6 +102,16 @@
   .photo__item:nth-child(3) .photo__like {
     background-color: #eaeaea;
   }
+
+  .photo__item:first-child .photo__image {
+    width: 100%;
+    height: 400px;
+  }
+
+  .photo__image {
+    width: 100%;
+    height: 267px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -108,5 +122,15 @@
 
   .photo__item:first-child {
     grid-column: 1/4;
+  }
+
+  .photo__item:first-child .photo__image {
+    width: 100%;
+    height: 400px;
+  }
+
+  .photo__image {
+    width: 100%;
+    height: 267px;
   }
 }

@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/apple.png">
 </head>
 
 <body class="page__body">
@@ -13,7 +15,9 @@
   <header class="main-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo">
+        <picture>
         <img class="main-nav__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
+        </picture>
       </a>
       <div class="main-nav__menu-wrapper">
         <button class="main-nav__toggle" type="button">
@@ -30,6 +34,7 @@
           <li class="site-list__item site-list__item--multimedia">
             <a class="site-list__link" href="catalog.html">
               Фото и видео
+            </a>
           </li>
           <li class="site-list__item site-list__item--form">
             <a class="site-list__link" href="form.html">
@@ -71,8 +76,12 @@
                 <p class="reasons__description reasons__description--colour">Седона не аттракцион для туристов, там течет
                 своя жизнь</p>
               </div>
-            <img class="reasons__pictures" src="img/index/city.jpg" width="320" height="260"
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/img-desktop//city-desktop.jpg 1x, img/img-desktop/city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/img-tablet/city-tablet.jpg 1x, img/img-tablet/city-tablet@2x.jpg 2x">
+            <img class="reasons__pictures" src="img/index/city.jpg" srcset="img/index/city@2x.jpg" width="320" height="260"
               alt="Фото городка Седоны">
+              </picture>
             </div>
             <ul class="reasons__advantages">
               <li class="reasons__item reasons__item--housing">
@@ -97,8 +106,12 @@
                 <p class="reasons__description reasons__description--colour">Да, по нему можно пройтись! Если вы
                 осмелитесь, конечно</p>
             </div>
-            <img class="reasons__picrures" src="img/index/devils-bridge.jpg" width="320" height="260"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/img-desktop/devils-bridge-desktop.jpg 1x, img/img-desktop/devils-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/img-tablet/devils-bridge-tablet.jpg 1x, img/img-tablet/devils-bridge-tablet@2x.jpg 2x">
+            <img class="reasons__pictures" src="img/index/devils-bridge.jpg" srcset="img/index/devils-bridge@2x.jpg" width="320" height="260"
               alt="Фото моста дьявола">
+            </picture>
             </div>
           </li>
           <div class="reasons__bonus">
@@ -190,6 +203,7 @@
     </div>
   </footer>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
