@@ -1,17 +1,13 @@
-.photo__item {
-  padding: 24px 20px 25px;
-}
-
 .photo__wrapper {
   background-color: #964912;
 }
 
-.photo__image {
-  display: block;
-}
-
 .photo__information {
   text-align: left;
+}
+
+.photo__image {
+  display: block;
 }
 
 .photo__title {
@@ -43,6 +39,7 @@
   margin-right: 14px;
   border: none;
   background-color: #ffffff;
+  padding: 0;
 }
 
 .photo__count {
@@ -50,18 +47,66 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  padding-bottom: 5px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .photo {
+    position: relative;
+  }
+
+  .photo__item {
+    padding: 24px 20px 25px;
+  }
+
+  .photo__item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 435px;
+    left: 0;
+  }
+
+  .photo__item::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 870px;
+    left: 0;
+  }
+
+  .photo__likes::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    bottom: 435px;
+    left: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .photo {
-    width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
   }
 
   .photo__item:first-child {
     grid-column: 1/3;
+  }
+
+  .photo__item:first-child .photo__image {
+    width: 100%;
+    height: 400px;
+  }
+
+  .photo__image {
+    width: 100%;
+    height: 267px;
   }
 
   .photo__item {
@@ -74,7 +119,7 @@
     background-color: #f2f2f2;
   }
 
-  .photo__item:nth-child(3) .photo__container {
+  .photo__container--background {
     background-color: #eaeaea;
   }
 
@@ -91,33 +136,23 @@
   }
 
   .photo__likes {
-    padding: 28px 20px 27px 0;
+    padding: 28px 20px 0 0;
   }
 
   .photo__like {
     background-color: #f2f2f2;
-    margin-right: 9px;
+    margin-right: 5px;
   }
 
-  .photo__item:nth-child(3) .photo__like {
+  .photo__like--background {
     background-color: #eaeaea;
-  }
-
-  .photo__item:first-child .photo__image {
-    width: 100%;
-    height: 400px;
-  }
-
-  .photo__image {
-    width: 100%;
-    height: 267px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 33.4% 33.3% 33.3%;
   }
 
   .photo__item:first-child {
@@ -132,5 +167,44 @@
   .photo__image {
     width: 100%;
     height: 267px;
+  }
+
+  .photo__item {
+    position: relative;
+  }
+
+  .photo__item:first-child .photo__container {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+
+  .photo__container {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+
+  .photo__title {
+    color: #ffffff;
+  }
+
+  .photo__author {
+    color: #ffffff;
+  }
+
+  .photo__like {
+    background: transparent;
+  }
+
+  .photo__like-icon path {
+    opacity: 1;
+    fill: #ffffff;
+  }
+
+  .photo__count {
+    color: #ffffff;
   }
 }
