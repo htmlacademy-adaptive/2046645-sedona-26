@@ -8,3 +8,33 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@media (max-width: @mobile-width-only) {
+  .desktop-hidden {
+    display: none;
+  }
+
+  .tablet-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .phone-hidden {
+    display: none;
+  }
+
+  .desktop-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .phone-hidden {
+    display: none;
+  }
+
+  .tablet-hidden {
+    display: none;
+  }
+}

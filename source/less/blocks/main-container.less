@@ -1,7 +1,11 @@
+.main-container__promo {
+  background-color: #3f5e72;
+}
+
 @media (max-width: @mobile-width-only) {
   .main-container__promo {
     position: relative;
-    background-image: url("../img/index/index-background.jpg");
+    background-image: url("../img/img-phone/index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #3f3f3f;
@@ -10,7 +14,7 @@
 
   @media (min-resolution: 2dppx) {
     .main-container__promo {
-      background-image: url("../img/index/index-background@2x.jpg");
+      background-image: url("../img/img-phone/index-background@2x.jpg");
       background-repeat: no-repeat;
     }
   }
@@ -18,12 +22,31 @@
   .main-container__promo-logo {
     padding-top: 90px;
   }
+
+  .main-container__promo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    background-image: url("../img/vector.svg");
+    bottom: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .main-container__promo-logo {
+    width: 60%;
+    min-height: 350px;
+    padding-top: 77px;
+  }
+
   .main-container__promo {
+    position: relative;
     background-image: url("../img/img-tablet/index-background-tablet.jpg");
     min-height: 518px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   @media (min-resolution: 2dppx) {
@@ -31,24 +54,40 @@
     background-repeat: no-repeat;
   }
 
-  .main-container__promo-logo {
-    width: 60%;
-    min-height: 350px;
-    padding-top: 77px;
+  .main-container__promo::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/vector-tablet.svg");
+    width: 100%;
+    height: 57px;
+    bottom: 0;
+    left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-container__promo {
-    background-image: url("../img/img-desktop/index-background-desktop.jpg");
-  }
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/img-desktop/index-background-desktop@2x.jpg");
-  }
-
   .main-container__promo-logo {
     width: 38%;
     padding-top: 78px;
+  }
+
+  .main-container__promo {
+    position: relative;
+    min-height: 518px;
+    background-image: url("../img/img-desktop/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-desktop/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .main-container__promo::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/vecrot-desktop.svg");
   }
 }

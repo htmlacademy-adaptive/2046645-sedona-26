@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
@@ -72,7 +72,7 @@
   <main class="main-container">
     <div class="main-container__promo">
       <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
-      <img class="main-container__promo-logo" src="img/index/welcome.svg" width="282" height="214"
+      <img class="main-container__promo-logo" src="img/welcome.svg" width="282" height="214"
         alt="Welcome to the gorgeous Sedone 'Because the Grand Canyon sucks!">
     </div>
     <section class="reasons">
@@ -90,7 +90,7 @@
           <li class="reasons__item reasons__item--city">
             <div class="reasons__block">
               <div class="reasons__city">
-                <h3 class="reasons__title reasons__title--colour">НАСТОЯЩИЙ ГОРОДОК</h3>
+                <h3 class="reasons__title reasons__title--colour">НАСТОЯЩИЙ <br class="desktop-hidden">ГОРОДОК</h3>
                 <span class="reasons__number reasons__number--colour">— №1 —</span>
                 <p class="reasons__description reasons__description--colour">Седона не аттракцион для туристов, там течет
                 своя жизнь</p>
@@ -100,34 +100,34 @@
                 srcset="img/img-desktop/city-desktop.webp 1x, img/img-desktop/city-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/img-tablet/city-tablet.webp 1x, img/img-tablet/city-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/index/city.webp 1x, img/index/city@2.webp 2x">
+                <source type="image/webp" srcset="img/img-phone/city.webp 1x, img/img-phone/city@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                 srcset="img/img-desktop/city-desktop.jpg 1x, img/img-desktop/city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                 srcset="img/img-tablet/city-tablet.jpg 1x, img/img-tablet/city-tablet@2x.jpg 2x">
-            <img class="reasons__pictures" src="img/index/city.jpg" srcset="img/index/city@2x.jpg" width="320" height="260"
-              alt="Фото городка Седоны">
+            <img class="reasons__pictures" src="img/img-phone/city.jpg" width="320" height="260"
+              srcset="img/img-phone/city@2x.jpg" alt="Фото городка Седоны">
               </picture>
             </div>
             <ul class="reasons__advantages">
               <li class="reasons__item reasons__item--housing">
                 <h4 class="reasons__title reasons__title--advantages">ЖИЛЬЕ</h4>
-                <p class="reasons__description reasons__description--advantages">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="reasons__description reasons__description--advantages">Рекомендуем пожить в настоящем <br class="desktop-hidden">мотеле, все как в кино!</p>
               </li>
               <li class="reasons__item reasons__item--food">
                 <h4 class="reasons__title reasons__title--advantages">ЕДА</h4>
-                <p class="reasons__description reasons__description--advantages">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="reasons__description reasons__description--advantages">Всегда заказывайте фирменный бургер, <br class="tablet-hidden">вы не разочаруетесь!</p>
               </li>
               <li class="reasons__item reasons__item--gift">
                 <h4 class="reasons__title reasons__title--advantages">СУВЕНИРЫ</h4>
-                <p class="reasons__description reasons__description--advantages">Не только китайского, но и местного производства!</p>
+                <p class="reasons__description reasons__description--advantages">Не только китайского, <br class="desktop-hidden">но и местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="reasons__item reasons__item--bridge">
             <div class="reasons__landscapes">
               <div class="reasons__background">
-                <h3 class="reasons__title reasons__title--colour">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+                <h3 class="reasons__title reasons__title--colour">ТАМ ЕСТЬ <br class="desktop-hidden">МОСТ ДЬЯВОЛА</h3>
                 <span class="reasons__number reasons__number--colour">— №2 —</span>
                 <p class="reasons__description reasons__description--colour">Да, по нему можно пройтись! Если вы
                 осмелитесь, конечно</p>
@@ -135,26 +135,26 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/img-desktop/devils-bridge-desktop.jpg 1x, img/img-desktop/devils-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/img-tablet/devils-bridge-tablet.jpg 1x, img/img-tablet/devils-bridge-tablet@2x.jpg 2x">
-            <img class="reasons__pictures" src="img/index/devils-bridge.jpg" srcset="img/index/devils-bridge@2x.jpg" width="320" height="260"
+            <img class="reasons__pictures" src="img/img-phone/devils-bridge.jpg" srcset="img/img-phone/devils-bridge@2x.jpg" width="320" height="260"
               alt="Фото моста дьявола">
             </picture>
             </div>
           </li>
           <div class="reasons__bonus">
           <li class="reasons__item reasons__item--square">
-            <h3 class="reasons__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <h3 class="reasons__title">НЕБОЛЬШАЯ <br class="desktop-hidden">ПЛОЩАДЬ</h3>
             <span class="reasons__number">— №3 —</span>
             <p class="reasons__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="reasons__item reasons__item--road">
-            <h3 class="reasons__title">КРАСИВАЯ ДОРОГА</h3>
+            <h3 class="reasons__title">КРАСИВАЯ <br class="desktop-hidden">ДОРОГА</h3>
             <span class="reasons__number">— №4 —</span>
-            <p class="reasons__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="reasons__description">Ехать в седону из <br class="tablet-hidden">Лас-Вегаса <br class="phone-hidden">совсем <br class="desktop-hidden">не скучно!</p>
           </li>
           <li class="reasons__item reasons__item--tourist">
-            <h3 class="reasons__title">МАЛО ТУРИСТОВ</h3>
+            <h3 class="reasons__title">МАЛО <br class="tablet-hidden">ТУРИСТОВ</h3>
             <span class="reasons__number">— №5 —</span>
-            <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="reasons__description">Большинство едет в Гранд Каньон <br class="phone-hidden">и толпится там</p>
           </li>
           </div>
         </ul>
