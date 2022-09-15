@@ -8,7 +8,36 @@
 }
 
 .copyright__icon {
-  position: absolute;
-  top: -10px;
-  right: -40px;
+  vertical-align: middle;
+  margin-left: 9px;
+}
+
+.copyright__link:hover {
+  color: #81b3d2;
+}
+
+.copyright__link:active {
+  color: #b3b3b3;
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: #81b3d2;
+}
+
+.copyright__link:active .copyright__icon {
+  fill: #b3b3b3;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__icon {
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__icon {
+    vertical-align: middle;
+    margin-left: 10px;
+  }
 }

@@ -12,7 +12,7 @@
 }
 
 .form__legend-title--fullname {
-  padding: 24px 75px 0 75px;
+  padding: 25px 75px 0 75px;
 }
 
 .form__group {
@@ -56,7 +56,7 @@
   padding: 16px 0 16px 16px;
   border: none;
   background-color: #f2f2f2;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .form__input-text::placeholder {
@@ -90,7 +90,6 @@
   height: 38px;
   position: absolute;
   right: 0;
-  top: 21px;
   background-color: #e6e6e6;
   padding-top: 20px;
 }
@@ -140,6 +139,10 @@
   background-color: #e5e5e5;
 }
 
+.form__control:focus-within .form__control-mark {
+  outline: 1px solid #000000;
+}
+
 .form__control:active .form__control-mark {
   background-color: #d5d5d5;
 }
@@ -174,6 +177,10 @@
   background-color: #e5e5e5;
 }
 
+.form__control:focus-within .form__control-check-mark {
+  outline: 1px solid #000000;
+}
+
 .form__control:active .form__control-check-mark {
   background-color: #d5d5d5;
 }
@@ -190,7 +197,7 @@
 }
 
 .form__legend-title--sights {
-  padding: 27px 42px 0;
+  padding: 23px 42px 0;
 }
 
 .form__sights-wrapper {
@@ -199,15 +206,15 @@
 }
 
 .form__fieldset--emotions {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .form__legend-title--emotions {
-  padding: 24px 37px 20px 38px;
+  padding: 22px 37px 20px 38px;
 }
 
 .form__textarea {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 247px;
   min-height: 118px;
   font-weight: 700;
@@ -215,7 +222,7 @@
   line-height: 26px;
   padding: 16px;
   border: none;
-  margin: 0 21px 56px 20px;
+  margin: 0 21px 49px 20px;
   background-color: #f2f2f2;
 }
 
@@ -224,13 +231,13 @@
 }
 
 .form__button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 14px 34px 17px 32px;
+  padding: 15px 34px 17px 32px;
   text-transform: uppercase;
   border: none;
   width: 88%;
@@ -252,58 +259,58 @@
     position: relative;
   }
 
-  .form__legend-title--fullname::before {
+  .form__fieldset--fullname::before {
     position: absolute;
     content: "";
     width: 100%;
     height: 1px;
     background-color: #e5e5e5;
-    top: 0;
+    top: -50px;
     left: 0;
   }
 
-  .form__legend-title--contacts::before {
+  .form__fieldset--contacts::before {
     position: absolute;
     content: "";
     width: 100%;
     height: 1px;
     background-color: #e5e5e5;
-    top: 0;
+    top: -50px;
     left: 0;
   }
 
-  .form__legend-title--impression::before {
+  .form__fieldset--impression::before {
     position: absolute;
     content: "";
     width: 100%;
     height: 1px;
     background-color: #e5e5e5;
-    top: 0;
+    top: -50px;
     left: 0;
   }
 
-  .form__legend-title--sights::before {
+  .form__fieldset--sights::before {
     position: absolute;
     content: "";
     width: 100%;
     height: 1px;
     background-color: #e5e5e5;
-    top: 0;
+    top: -80px;
     left: 0;
   }
 
-  .form__legend-title--emotions::before {
+  .form__fieldset--emotions::before {
     position: absolute;
     content: "";
     width: 100%;
     height: 1px;
     background-color: #e5e5e5;
-    top: 0;
+    top: -72px;
     left: 0;
   }
 
   .form__submit-wrapper {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 }
 
@@ -313,8 +320,8 @@
   }
 
   .form__legend-title--fullname {
-    padding: 0;
-    margin-bottom: 28px;
+    padding: 0 83px 0 80px;
+    margin-bottom: 29px;
   }
 
   .form__legend-title {
@@ -323,8 +330,7 @@
   }
 
   .form__legend-title--contacts {
-    padding: 0;
-    padding-left: 5px;
+    padding: 0 22px 0 24px;
     margin-bottom: 28px;
   }
 
@@ -332,14 +338,14 @@
     position: relative;
   }
 
-  .form__legend-title--contacts::before {
+  .form__fieldset--contacts::before {
     position: absolute;
     content: "";
     width: 1px;
     height: 338px;
     background-color: #d8d8d8;
-    top: 0;
-    left: 0;
+    top: -55px;
+    left: -1px;
   }
 
   .form__fullname-wrapper {
@@ -359,36 +365,36 @@
   }
 
   .form__legend-title--impression {
-    padding: 47px 123px 0;
-    margin-bottom: 30px;
+    padding: 47px 186px 0;
+    margin-bottom: 27px;
   }
 
-  .form__legend-title--impression::before {
+  .form__fieldset--impression::before {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     background-color: #d8d8d8;
     left: 0;
-    top: 60px;
+    top: -44px;
   }
 
-  .form__legend-title--impression::after {
+  .form__fieldset--impression::after {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     background-color: #d8d8d8;
     right: 0;
-    top: 60px;
+    top: -44px;
   }
 
   .form__impression-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: space-between;
-    padding-left: 37px;
-    padding-right: 35px;
+    padding-left: 35px;
+    padding-right: 22px;
   }
 
   .form__control {
@@ -401,60 +407,60 @@
     margin-bottom: 30px;
   }
 
-  .form__legend-title--sights::before {
+  .form__fieldset--sights::before {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     background-color: #d8d8d8;
     left: 0;
-    top: 57px;
+    top: -57px;
   }
 
-  .form__legend-title--sights::after {
+  .form__fieldset--sights::after {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     background-color: #d8d8d8;
     right: 0;
-    top: 57px;
+    top: -57px;
   }
 
   .form__sights-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: space-between;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 82px;
+    padding-right: 53px;
   }
 
   .form__legend-title--emotions {
     width: 52%;
     font-size: 21px;
     line-height: 26px;
-    padding: 28px 123px 0;
+    padding: 24px 123px 0;
     margin-bottom: 28px;
   }
 
-  .form__legend-title--emotions::before {
+  .form__fieldset--emotions::before {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     background-color: #d8d8d8;
     left: 0;
-    top: 39px;
+    top: -42px;
   }
 
-  .form__legend-title--emotions::after {
+  .form__fieldset--emotions::after {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     background-color: #d8d8d8;
     right: 0;
-    top: 39px;
+    top: -42px;
   }
 
   .form__textarea {
@@ -464,7 +470,7 @@
   }
 
   .form__submit-wrapper {
-    padding: 48px 0 64px;
+    padding: 40px 0 64px;
     display: flex;
     justify-content: space-between;
   }
@@ -488,6 +494,10 @@
     margin-right: 63px;
   }
 
+  .form__legend-title--fullname {
+    padding: 0 168px 0 167px;
+  }
+
   .form__contacts-wrapper {
     margin-left: 64px;
   }
@@ -497,7 +507,7 @@
   }
 
   .form__legend-title--contacts {
-    padding: 0;
+    padding: 0 93px 0 95px;
   }
 
   .form__input-text--contacts {
@@ -505,60 +515,60 @@
   }
 
   .form__legend-title--impression {
-    padding: 53px 123px 0;
+    padding: 55px 344px 0;
     margin-bottom: 30px;
   }
 
-  .form__legend-title--impression::before {
+  .form__fieldset--impression::before {
     position: absolute;
     content: "";
-    width: 23%;
+    width: 29%;
     height: 1px;
     background-color: #d8d8d8;
     left: 0;
-    top: 67px;
+    top: -43px;
   }
 
-  .form__legend-title--impression::after {
+  .form__fieldset--impression::after {
     position: absolute;
     content: "";
-    width: 23%;
+    width: 29%;
     height: 1px;
     background-color: #d8d8d8;
     right: 0;
-    top: 67px;
+    top: -43px;
   }
 
   .form__impression-wrapper {
     padding: 17px 10px 4px 53px;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 31.2% 31.2% 31.2%;
     justify-content: space-between;
   }
 
   .form__legend-title--sights {
-    padding: 55px 327px 0 327px;
+    padding: 51px 328px 0 326px;
     margin-bottom: 60px;
   }
 
-  .form__legend-title--sights::before {
+  .form__fieldset--sights::before {
     position: absolute;
     content: "";
-    width: 23%;
+    width: 29%;
     height: 1px;
     background-color: #d8d8d8;
     left: 0;
-    top: 78px;
+    top: -87px;
   }
 
-  .form__legend-title--sights::after {
+  .form__fieldset--sights::after {
     position: absolute;
     content: "";
-    width: 23%;
+    width: 29%;
     height: 1px;
     background-color: #d8d8d8;
     right: 0;
-    top: 78px;
+    top: -87px;
   }
 
   .form__sights-wrapper {
@@ -582,24 +592,24 @@
     width: 33%;
   }
 
-  .form__legend-title--emotions::before {
+  .form__fieldset--emotions::before {
     position: absolute;
     content: "";
-    width: 23%;
+    width: 29%;
     height: 1px;
     background-color: #d8d8d8;
     left: 0;
-    top: 82px;
+    top: -40px;
   }
 
-  .form__legend-title--emotions::after {
+  .form__fieldset--emotions::after {
     position: absolute;
     content: "";
-    width: 23%;
+    width: 29%;
     height: 1px;
     background-color: #d8d8d8;
     right: 0;
-    top: 82px;
+    top: -40px;
   }
 
   .form__textarea {
@@ -608,7 +618,7 @@
   }
 
   .form__submit-wrapper {
-    padding: 43px 96px 64px 96px;
+    padding: 43px 96px 61px 96px;
     margin: 0;
   }
 
@@ -619,6 +629,6 @@
 
   .form__notification {
     padding: 0;
-    padding-top: 23px;
+    padding-top: 19px;
   }
 }

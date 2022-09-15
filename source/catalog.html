@@ -9,6 +9,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon/apple.png">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -34,7 +36,9 @@
   <header class="main-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo">
-        <img class="main-nav__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Седона">
+        <picture>
+        <img class="main-nav__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона">
+        </picture>
       </a>
       <div class="main-nav__menu-wrapper">
         <button class="main-nav__toggle" type="button">
@@ -43,22 +47,22 @@
       </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--main">
+          <li class="site-list__item main-nav__item">
             <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item site-list__item--multimedia">
+          <li class="site-list__item main-nav__item">
             <a class="site-list__link site-list__link--active" href="#">
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item site-list__item--form">
+          <li class="site-list__item main-nav__item">
             <a class="site-list__link" href="form.html">
               Форма отзыва
             </a>
           </li>
-          <li class="site-list__item site-list__item--academy">
+          <li class="site-list__item main-nav__item">
             <a class="site-list__link" href="#">
               HTML Academy
             </a>
@@ -71,7 +75,7 @@
     <div class="page-main__promo">
       <img class="page-main__promo-logo" src="img/sedona.svg" width="229" height="39" alt="Промо текст Седоны">
     </div>
-    <div class="page-main__container">
+  <div class="page-main__container">
     <section class="page-main__header">
       <div class="page-main__wrapper-catalog">
         <h1 class="page-main__title">ФОТО И ВИДЕО</h1>
@@ -80,6 +84,7 @@
         </p>
       </div>
     </section>
+  </div>
     <section class="page-main__gallery gallery">
       <h2 class="visually-hidden">Галерея фотографий.</h2>
       <ul class="page-main__photo photo">
@@ -199,10 +204,10 @@
       <div class="video__wrapper">
         <h2 class="visually-hidden">Видео о Седоне.</h2>
         <strong class="video__title">ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</strong>
-        <p class="video__description">Смотрите видео презентацию и скорее за билетами, пока они не подорожали в очередной
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
         раз!</p>
       </div>
-      <div class="video__container"></div>
+      <div class="video__container">
         <a class="video__link" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/img-desktop/video-desktop.jpg 1x, img/img-desktop/video-desktop@2x.jpg 2x">
