@@ -194,7 +194,9 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--emotions">
             <legend class="form__legend-title form__legend-title--emotions">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
-            <textarea class="form__textarea" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+            <label>
+              <textarea class="form__textarea" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
           <div class="form__submit-wrapper">
             <button class="button form__button" type="submit">Отправить отзыв</button>
             <p class="form__notification">*-ОБЯЗАТЕЛЬНОЕ ПОЛЕ</p>
@@ -246,7 +248,7 @@
     </div>
   </div>
 </footer>
-  <section class="modal-form modal-form--luck modal-form--block">
+  <section class="modal-form modal-form--luck modal-form--opened">  <!--modal-form--opened: Показывает окно с отправленным сообщением-->
     <div class="modal-form__container-luck">
       <div class="modal-form__wrapper-luck">
         <h2 class="modal-form__title-luck">ВАШ ОТЗЫВ ОТПРАВЛЕН!</h2>
@@ -259,7 +261,7 @@
       </div>
     </div>
   </section>
-  <section class="modal-form modal-form--failure modal-form--none">
+  <section class="modal-form modal-form--failure modal-form--error">  <!--modal-form--error: Показывает окно с ошибкой-->
     <div class="modal-form__container-failure">
       <div class="modal-form__wrapper-failure">
         <h2 class="modal-form__title-failure">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
